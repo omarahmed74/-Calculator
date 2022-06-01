@@ -1,0 +1,7 @@
+input[type='button']:hover{
+   transform: scale(1.2 , 1.2);
+   transition: all .5s;
+}
+body{
+    background-color: #0d0d42;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="eng"> 
+
+<head> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="Stylesheet" href="./css/main.css">
+  <link rel="Stylesheet" href="./css/all.min.css">
+  <title>Document</title>
+</head>
+<body>
+
+    <div class="container col-8 mt-5">
+        <form name="calc">
+       <table class="table table-dark">
+         <tr>
+          <th colspan="4" style="background-color: #777;"><input type="text" name="result" class="form-control" placeholder="Your Result"></th>
+         </tr>
+         <tr>
+          <td><input class="form-control" type="button" value="1" onclick="calc.result.value+=1"></td>
+          <td><input class="form-control" type="button" value="2" onclick="calc.result.value+=2"></td>
+          <td><input class="form-control" type="button" value="3" onclick="calc.result.value+=3"></td>
+          <td><input class="form-control" type="button" value="+" onclick="calc.result.value+='+'"></td>
+         </tr>
+         <tr>
+            <td><input class="form-control" type="button" value="4" onclick="calc.result.value+=4"></td>
+            <td><input class="form-control" type="button" value="5" onclick="calc.result.value+=5"></td>
+            <td><input class="form-control" type="button" value="6" onclick="calc.result.value+=6"></td>
+            <td><input class="form-control" type="button" value="-" onclick="calc.result.value+='-'"></td>
+           </tr>
+           <tr>
+            <td><input class="form-control" type="button" value="7" onclick="calc.result.value+=7"></td>
+            <td><input class="form-control" type="button" value="8" onclick="calc.result.value+=8"></td>
+            <td><input class="form-control" type="button" value="9" onclick="calc.result.value+=9"></td>
+            <td><input class="form-control" type="button" value="*" onclick="calc.result.value+='*'"></td>
+           </tr>
+           <tr>
+            <td><input class="form-control" type="button" value="/" onclick="calc.result.value+='/'"></td>
+            <td><input class="form-control" type="button" value="0" onclick="calc.result.value+=0"></td>
+            <td><input class="form-control" type="button" value="clear" onclick="calc.result.value=''"></td>
+            <td><input class="form-control" type="button" 
+                value="=" onclick="calc.result.value = eval(calc.result.value) "></td>
+           </tr>
+       </table>
+    </form>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
